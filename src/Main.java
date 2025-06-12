@@ -5,6 +5,10 @@ class Animal {
     public Animal(String name) {
         this.name = name;
     }
+
+    public void printName(String name) {
+        System.out.println("동물 이름 : " + name + this.name);
+    }
 }
 
 class Dog extends Animal {
@@ -20,6 +24,7 @@ public class Main {
     public static void main(String[] args) {
         Dog dog = new Dog("댕댕이", "푸들");
 
-        System.out.println("동물 : " + dog.name + "품종 : " + dog.breed);
+        dog.printName("멍냥이");
+
     }
 }
