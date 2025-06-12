@@ -7,6 +7,8 @@ public class Main {
         System.out.println("나이를 입력하세요 : ");
         int age = sc.nextInt();
 
+        sc.nextLine();
+
         System.out.println("이름을 입력하세요 : ");
         String name = sc.nextLine();
 
