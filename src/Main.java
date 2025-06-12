@@ -22,12 +22,16 @@ class Car extends Vehicle {
         super.display();
         System.out.println("모델 : " + model);
     }
-
 }
 
 public class Main {
     public static void main(String[] args) {
-        Car car = new Car("올란도", "SUV");
+
+        Vehicle mycar = new Car("현대", "레이");
+        Car car = new Car("GM", "SUB");
+
+
         car.display();
+        mycar.display();
     }
 }
